@@ -52,8 +52,8 @@ export default function Home() {
     e.preventDefault();
     const clickedUrl = generateMailtoUrl({
       to: "ulstudioworkspace@gmail.com",
-      body: "I have an idea!",
-      subject: "Job Offer!",
+      body: "",
+      subject: "Hi Ulstudio!,",
     });
 
     window.location.href = clickedUrl;
