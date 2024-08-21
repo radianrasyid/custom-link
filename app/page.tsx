@@ -10,6 +10,10 @@ export default function Home() {
     }
   }, []);
 
+  //MARK: email link generator
+  // what this function does is it accepts string (text) or array of text for TO, CC, and BCC params
+  // if you have multiple recipients, ccs, or bccs, simply pass ["email1", "email2", "email3"]
+  // as for the subject and body you just pas string (text) right away
   function generateMailtoUrl(options: {
     to: string | string[];
     subject?: string;
